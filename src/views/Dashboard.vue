@@ -1,7 +1,6 @@
 <template>
   <div :class="{ none : !isReady }">
     <h1 class="pb-4">Dashboard</h1>
-    <analytics/>
   </div>
 </template>
 
@@ -19,9 +18,7 @@
         }
       },
       created(){
-        eventBus.$on('analytics-ready', () => {
-          this.isReady = true
-        })
+        this.$store.commit('SET_LOADING', false);
       },
       computed: {
         loading(){

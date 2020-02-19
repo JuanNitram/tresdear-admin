@@ -29,6 +29,8 @@ export default {
                 if(this.selectedItem)
                     this.selected = this.selectedItem;
                 eventBus.$emit('component-rendered')
+            } else {
+                eventBus.$emit('component-rendered')
             }
         });
     },

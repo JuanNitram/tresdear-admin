@@ -33,6 +33,8 @@ export default {
                     if(this.itemsSelected.length > 0)
                         this.selected = this.itemsSelected;
                     eventBus.$emit('component-rendered')
+                } else {
+                    eventBus.$emit('component-rendered')
                 }
             });
 
@@ -46,6 +48,8 @@ export default {
                         if(this.itemsSelected > 0)
                             this.selected = this.itemsSelected;
                         eventBus.$emit('component-rendered')
+                    } else {
+                        eventBus.$emit('component-rendered')
                     }
                 });
             })
@@ -56,6 +60,8 @@ export default {
                     this.items = res.data[this.section];
                     if(this.itemsSelected.length > 0)
                         this.selected = this.itemsSelected;
+                    eventBus.$emit('component-rendered')
+                } else {
                     eventBus.$emit('component-rendered')
                 }
             });

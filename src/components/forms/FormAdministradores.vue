@@ -166,6 +166,8 @@ export default{
             this.renderSelects = true;
             this.$store.commit('SET_LOADING', false);
         }
+
+        // this.$store.commit('SET_LOADING', false);
     },
     methods: {
         save(){
