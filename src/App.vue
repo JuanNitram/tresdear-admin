@@ -23,7 +23,7 @@
             <v-footer class="pa-3" height="8vh">
                 <v-spacer></v-spacer>
                 <v-flex py-3 text-xs-center xs12>
-                    <div>&copy; {{ new Date().getFullYear() }} - <strong>Sideral</strong></div>
+                    <div>&copy; {{ new Date().getFullYear() }}</div>
                 </v-flex>
             </v-footer>
 
